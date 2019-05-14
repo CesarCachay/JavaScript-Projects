@@ -1,0 +1,71 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  background-image: url(https://media.giphy.com/media/Q9aBxHn9fTqKs/giphy.gif);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "a a"
+    "b c";
+}
+
+output {
+  color: white;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+input,
+.clear-button,
+option,
+select {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+}
+
+input,
+.clear-button,
+select {
+  width: 50px;
+  height: 50px;
+}
+
+input {
+  text-align: center;
+}
+
+.submission,
+.clear-button,
+select {
+  width: 130px;
+}
+
+.operations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: a;
+  height: 200px;
+}
+
+.square-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: b;
+}
+
+.powering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: c;
+}
