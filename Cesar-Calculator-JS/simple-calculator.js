@@ -43,7 +43,6 @@ $form.addEventListener("submit", handleOperation);
 const deleteButton = document.getElementById("delete")
 
 function handleDelete() {
-  console.log($form, $formsqr, $formpow)
   $form.elements["first"].value = "";
   $form.elements["second"].value = "";
   $form.elements["result"].value = "";
