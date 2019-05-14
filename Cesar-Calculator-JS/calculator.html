@@ -13,11 +13,11 @@
 
 <body>
   <div class="operations">
-    <p>Binary Operations</p>
+    <p>Simple Calculator</p>
     <form id="operation">
       <input type="text" id="first" name="first" />
       <input type="text" id="second" name="second" />
-      <select name="operation-select">
+      <select name="operation-select" class="operations__options">
         <option value="addition">Addition</option>
         <option value="substraction">Substraction</option>
         <option value="multiply">Multiplication</option>
@@ -28,10 +28,13 @@
       </select>
       <button class="clear-button" data-action="clear" id="delete">Clear</button>
       <input type="submit" value="Calculate" class="submission" />
-      <output name="result"></output>
+      <output name="result">0</output>
     </form>
   </div>
   <script src="simple-calculator.js"></script>
+  <div class="footer">
+    <p class="footer_message">Made in Codeable &#x2764;</p>
+  </div>
 </body>
 
 </html>

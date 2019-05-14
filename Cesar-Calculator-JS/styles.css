@@ -2,16 +2,16 @@ body {
   font-family: "Orbitron", sans-serif;
   background-image: url(https://media.giphy.com/media/Q9aBxHn9fTqKs/giphy.gif);
   background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "a a"
-    "b c";
 }
 
 output {
-  color: white;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.7em;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  border: 2px solid rgb(57, 243, 57);
 }
 
 p {
@@ -20,8 +20,20 @@ p {
   color: white;
 }
 
+
+.clear-button { 
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  background: red;
+  border: 2px solid black;
+}
+
+.clear-button:hover {
+  background: rgb(255, 78, 78);
+  color: rgb(216, 198, 94);
+}
+
 input,
-.clear-button,
 option,
 select {
   font-family: "Orbitron", sans-serif;
@@ -39,10 +51,20 @@ input {
   text-align: center;
 }
 
-.submission,
 .clear-button,
 select {
   width: 130px;
+}
+
+.submission {
+  width: 130px;
+  background: green;
+  border: 2px solid black;
+}
+
+.submission:hover {
+  background: rgb(30, 219, 30);
+  color: rgb(92, 78, 1);
 }
 
 .operations {
@@ -51,21 +73,31 @@ select {
   align-items: center;
   flex-direction: column;
   grid-area: a;
-  height: 200px;
+  height: 500px;
 }
 
-.square-root {
+.operation {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  grid-area: b;
+  flex-wrap: nowrap;
 }
 
-.powering {
+.operations__options {
+  background: blue;
+  border: 2px solid black;
+}
+
+.operations__options:hover {
+  background: rgb(66, 137, 243);
+  color: rgb(216, 198, 94);
+}
+
+.footer_message {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  grid-area: c;
 }
+
+#operation {
+  max-height: 60px;
+}
+/* Helpers */
