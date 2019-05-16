@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="operations">
+    <p>Binary Operations</p>
+    <form id="operation">
+      <input type="text" id="first" name="first" />
+      <input type="text" id="second" name="second" />
+      <select name="operation-select">
+        <option value="addition">Addition</option>
+        <option value="substraction">Substraction</option>
+        <option value="multiply">Multiplication</option>
+        <option value="division">Division</option>
+        </td>
+      </select>
+      <button class="clear-button" data-action="clear" id="delete">Clear</button>
+      <input type="submit" value="Calculate" class="submission" />
+      <output name="result"></output>
+    </form>
+  </div>
+  <div class="square-root">
+    <p>Square Root</p>
+    <form id="sqr">
+      <input type="text" id="first" name="third" />
+      <input type="submit" value="Calculate" class="submission" />
+      <output name="sqr-result"></output>
+    </form>
+  </div>
+  <div class="powering">
+    <p>Power</p>
+    <form id="power">
+      <input type="text" id="first" name="fourth" />
+      <input type="text" id="second" name="fifth" />
+      <input type="submit" value="Calculate" class="submission" />
+      <output name="pow-result"></output>
+    </form>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+
+</html>
