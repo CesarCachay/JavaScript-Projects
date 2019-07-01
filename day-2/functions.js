@@ -50,8 +50,8 @@ some(arrSome, isNegative);
 
 // Function "FIND"
 const find = (arr, fn) => {
-  for (let index = 0; index < arr.length; index++) {
-    if (fn(arr[index])) return arr[index];
+  for (let i = 0; i < arr.length; i++) {
+    if (fn(arr[i])) return arr[i];
   }
   return undefined;
 };
@@ -62,8 +62,8 @@ find(arrayFind, num => num > 10);
 // Function "CONCAT"
 
 const concat = (arr, ...elements) => {
-  for (let index = 0; index < elements.length; index++) {
-    arr.push(elements[index]);
+  for (let i = 0; i < elements.length; i++) {
+    arr.push(elements[i]);
   }
   return arr;
 };
@@ -72,3 +72,20 @@ const arrConcat = [1, 2, 3, 4, 5];
 concat(arrConcat, 6, 7);
 
 // Function "JOIN"
+
+const join = (arr, separator = ",") => {
+  let result = "";
+  for (let i = 0; i < arr.length - 1; i++) {
+    result += arr[i] + separator;
+  }
+  return result + arr[arr.length - 1];
+};
+
+const arrJoin = [1, 2, 3, 4, 5];
+join(arrJoin);
+
+const arrJoin = [1, 2, 3, 4, 5];
+join(arrJoin, "-");
+
+const arrJoin = [1, 2, 3, 4, 5];
+join(arrJoin, "--");
